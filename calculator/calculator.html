@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculator</title>
+    <link rel="stylesheet" href="cal.css">
+  </head>
+  <body>
+    <script src="cal.js" >
+    </script>
+
+    
+<div style="display: block;" class="first"></div>
+    
+      <button  onclick="calculation=0
+      console.log(calculation); result = document.querySelector('.first').innerHTML='';result = document.querySelector('.second').innerHTML= '';">C</button>
+  
+    <p class="thirdt-row"> 
+      <button onclick="updateCalculation(7);">7</button>
+      <button onclick="updateCalculation(8);">8</button>
+      <button onclick="updateCalculation(9)">9</button>
+      <button class="two" onclick="updateCalculation(' * ')">x</button></p>
+  
+  <p class="sec-row" >
+      <button onclick="updateCalculation(4);">4</button>
+      <button onclick="updateCalculation(5);">5</button>
+      <button onclick="updateCalculation(6);">6</button>
+      <button class="two" onclick="updateCalculation(' - ')">-</button>
+  </p>
+  
+     <p class="first-row" >
+        <button onclick="updateCalculation(1);">1</button>
+        <button onclick="updateCalculation(2);">2</button>
+        <button onclick="updateCalculation(3);">3</button>
+        <button class="two" onclick="updateCalculation(' + ');">+</button></p>  
+  
+        <p class="last" >
+      <button onclick="updateCalculation(0);">0</button>
+      <button onclick="updateCalculation('.');">,</button>
+      <button class="one" onclick="calculation=eval(calculation);
+      console.log(calculation);
+      let result = document.querySelector('.first').innerHTML= `${calculation}`;
+      ">=</button>
+      <button class="two" onclick="updateCalculation(' / ');">/</button>
+    </p>
+  </body>
+</html>
